@@ -1,0 +1,64 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-content { width: 55%; }
+.mode-portrait .sl-content { width: 100%; height: 60%; }
+.mode-landscape .sl-visual { width: 45%; }
+.mode-portrait .sl-visual { width: 100%; height: 40%; }
+.mode-landscape .sl-headline { font-size: 3.6rem; line-height: 1; }
+.mode-portrait .sl-headline { font-size: 2.4rem; line-height: 1.1; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout w-full h-full flex">
+
+    <!-- Left: dark editorial column -->
+    <div class="sl-content bg-slate-900 flex flex-col justify-between p-12 relative overflow-hidden">
+      <!-- Ambient glows -->
+      <div class="absolute top-0 left-0 w-72 h-72 rounded-full pointer-events-none" style="background: radial-gradient(circle, rgba(124,58,237,0.25), transparent 70%); transform: translate(-35%, -35%)"></div>
+      <div class="absolute bottom-0 right-0 w-56 h-56 rounded-full pointer-events-none" style="background: radial-gradient(circle, rgba(6,182,212,0.18), transparent 70%); transform: translate(30%, 30%)"></div>
+
+      <!-- Top badge -->
+      <div class="relative z-10">
+        <span class="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold text-violet-300 border border-violet-500" style="background: rgba(124,58,237,0.15); letter-spacing:0.05em">
+          ✦ AI-POWERED BUSINESS OS
+        </span>
+      </div>
+
+      <!-- Headline & tagline -->
+      <div class="relative z-10">
+        <div class="sl-headline font-black text-white mb-3">
+          BizVault<span style="background: linear-gradient(135deg, #a78bfa 0%, #06b6d4 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text"> AI</span>
+        </div>
+        <div class="w-12 h-0.5 mb-4" style="background: linear-gradient(to right, #7c3aed, #06b6d4)"></div>
+        <p class="text-slate-300 text-base font-light leading-relaxed mb-6" style="max-width: 28rem">
+          The Future of Business Management<br>and AI Automation
+        </p>
+        <p class="text-slate-500 text-sm mb-6">For sole traders, freelancers, retailers, watch sellers &amp; dropshippers across India</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs text-slate-400 bg-slate-800 rounded-full px-3 py-1 border border-slate-700">GST Invoicing</span>
+          <span class="text-xs text-slate-400 bg-slate-800 rounded-full px-3 py-1 border border-slate-700">Inventory</span>
+          <span class="text-xs text-slate-400 bg-slate-800 rounded-full px-3 py-1 border border-slate-700">8 AI Tools</span>
+          <span class="text-xs text-slate-400 bg-slate-800 rounded-full px-3 py-1 border border-slate-700">Analytics</span>
+          <span class="text-xs text-slate-400 bg-slate-800 rounded-full px-3 py-1 border border-slate-700">Accounting</span>
+        </div>
+      </div>
+
+      <!-- Attribution -->
+      <div class="relative z-10">
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: hero image -->
+    <div class="sl-visual relative overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=Futuristic%20dark%20AI%20business%20dashboard%20UI%20with%20neon%20purple%20cyan%20glow%2C%20glassmorphism%20floating%20panels%2C%20holographic%20charts%20and%20revenue%20analytics%2C%20minimal%20dark%20background%2C%20premium%20SaaS%20interface"
+        class="w-full h-full object-cover"
+        alt="BizVault AI Dashboard"
+      />
+      <!-- Blend edge into dark left column -->
+      <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(to right, #0f172a 0%, transparent 35%)"></div>
+    </div>
+
+  </div>
+</section>
