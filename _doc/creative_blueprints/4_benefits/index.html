@@ -1,0 +1,78 @@
+<style>
+.mode-landscape .sl-grid { grid-template-columns: repeat(3, 1fr); }
+.mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+.mode-landscape .sl-roi { flex-direction: row; gap: 2rem; align-items: center; }
+.mode-portrait .sl-roi { flex-direction: column; gap: 1rem; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full flex flex-col p-10">
+
+    <!-- Header -->
+    <div class="mb-5">
+      <div class="flex items-center gap-2 mb-1">
+        <div class="w-1 h-5 rounded-full" style="background: linear-gradient(to bottom, #7c3aed, #06b6d4)"></div>
+        <span class="text-xs font-bold text-slate-500 uppercase tracking-widest">Measurable Impact</span>
+      </div>
+      <h2 class="text-slate-900 font-black text-2xl">The value BizVault AI delivers</h2>
+    </div>
+
+    <!-- Metric cards -->
+    <div class="sl-grid grid gap-3 mb-4">
+
+      <div class="rounded-xl p-5 border border-slate-100 bg-white">
+        <div class="text-xs font-semibold text-violet-600 uppercase tracking-wider mb-1">Time Saved</div>
+        <div class="text-3xl font-black text-slate-900 mb-1">~17 min</div>
+        <div class="text-xs text-slate-500">saved per invoice vs. manual Excel entry. At 12 invoices/week, that's <strong class="text-slate-700">3.4 hours/week</strong> returned to the owner.</div>
+      </div>
+
+      <div class="rounded-xl p-5 border border-slate-100 bg-white">
+        <div class="text-xs font-semibold text-cyan-600 uppercase tracking-wider mb-1">GST Compliance</div>
+        <div class="text-3xl font-black text-slate-900 mb-1">Zero errors</div>
+        <div class="text-xs text-slate-500">Auto-computed CGST/SGST/IGST on every invoice. Sales and Purchase Registers ready for filing — no manual reconciliation.</div>
+      </div>
+
+      <div class="rounded-xl p-5 border border-slate-100 bg-white">
+        <div class="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">Business Visibility</div>
+        <div class="text-3xl font-black text-slate-900 mb-1">1 dashboard</div>
+        <div class="text-xs text-slate-500">Revenue, profit, GST, inventory, and customer analytics — unified in real-time. Business Health Score surfaces hidden risks instantly.</div>
+      </div>
+
+      <div class="rounded-xl p-5 border border-slate-100 bg-white">
+        <div class="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">Tools Replaced</div>
+        <div class="text-3xl font-black text-slate-900 mb-1">5+ apps</div>
+        <div class="text-xs text-slate-500">Replaces separate billing, inventory, accounting, GST, and CRM apps. One subscription, one login, full stack.</div>
+      </div>
+
+      <div class="rounded-xl p-5 border border-slate-100 bg-white">
+        <div class="text-xs font-semibold text-violet-600 uppercase tracking-wider mb-1">AI Content Output</div>
+        <div class="text-3xl font-black text-slate-900 mb-1">8 tools</div>
+        <div class="text-xs text-slate-500">Resume, captions, product descriptions, email, social posts — generated in seconds, not hours. Built for freelancers and students too.</div>
+      </div>
+
+      <div class="rounded-xl p-5 border border-slate-100 bg-white">
+        <div class="text-xs font-semibold text-cyan-600 uppercase tracking-wider mb-1">Niche Coverage</div>
+        <div class="text-3xl font-black text-slate-900 mb-1">2 modules</div>
+        <div class="text-xs text-slate-500">Dedicated Watch Seller and Dropshipping toolkits — profit calculators, order tracking, supplier management — ignored by every general SaaS.</div>
+      </div>
+
+    </div>
+
+    <!-- ROI summary block -->
+    <div class="rounded-2xl p-5 border border-violet-200 flex-shrink-0" style="background: linear-gradient(135deg, rgba(124,58,237,0.06) 0%, rgba(6,182,212,0.06) 100%)">
+      <div class="sl-roi flex">
+        <div class="flex-1">
+          <div class="text-xs font-bold text-violet-600 uppercase tracking-wider mb-1">ROI Summary — Pro Plan (₹499/mo)</div>
+          <p class="text-slate-700 text-sm">
+            12 invoices/week × 17 min saved × ₹250/hr owner time = <strong class="text-slate-900">₹850/week</strong> recovered.
+            Annual value <strong class="text-slate-900">₹44,200</strong> vs. ₹5,988/year plan cost = <strong class="text-violet-700 text-base">7.4× ROI</strong>.
+          </p>
+        </div>
+        <div class="flex-shrink-0 flex flex-col items-end justify-center">
+          <div class="text-3xl font-black text-transparent" style="background: linear-gradient(135deg, #7c3aed, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text">7.4×</div>
+          <div class="text-xs text-slate-500">return on investment</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
