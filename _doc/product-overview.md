@@ -1,227 +1,147 @@
-Create a complete production-ready SaaS web application called BizVault AI.
+# BizVault AI — Product Overview
 
-Purpose:
-BizVault AI is an all-in-one AI-powered business operating system for sole traders, freelancers, students, watch sellers, dropshippers, small businesses, retailers, and service providers.
+## Identity
+- **Name**: BizVault AI
+- **Tagline**: "The Future of Business Management and AI Automation"
+- **Category**: All-in-one AI-powered Business Operating System (SaaS)
+- **Market**: India — GST-compliant, INR pricing, Razorpay payments
+- **Admin credentials**: email: `admin` / password: `281109`
 
-Design Requirements:
+---
 
-* Futuristic AI operating system design
-* Premium startup-quality UI
-* Dark mode by default
-* Glassmorphism effects
-* Neon purple, cyan, blue, and pink gradients
-* Smooth animations
-* Mobile responsive
-* Desktop responsive
-* Modern dashboard
-* Beautiful charts and analytics
-* Professional typography
-* Fast performance
+## Purpose
+BizVault AI consolidates the full operational stack of a small Indian business — GST invoicing, inventory, accounting, customer management, and AI-powered content tools — into a single futuristic interface. It eliminates the need to juggle multiple apps and removes the manual burden of GST compliance and bookkeeping from business owners who can't afford a dedicated accountant.
 
-Authentication:
+---
 
-* User Registration
-* User Login
-* Forgot Password
-* Email Verification
-* Profile Management
-* Role-Based Access Control
-* Separate User and Admin Access
+## Target Users (Personas)
+| Persona | Core Job to Be Done |
+|---|---|
+| SMB Owner / Retailer | GST invoicing, inventory tracking, P&L visibility |
+| Freelancer / Sole Trader | Invoice creation, expense tracking, customer CRM |
+| Watch Seller | Watch-specific inventory, profit calculator, sales analytics |
+| Dropshipper | Product profit calculator, order + supplier tracking |
+| Student | AI homework planner, resume builder, study planner |
+| Service Provider | Customer profiles, invoice history, income tracking |
 
-User Dashboard:
+---
 
-* Revenue Overview
-* Profit Overview
-* GST Summary
-* Sales Analytics
-* Customer Analytics
-* Inventory Analytics
-* Recent Activity
-* Business Health Score
+## Design Language
+- Dark mode by default; futuristic AI operating system aesthetic
+- Glassmorphism effects with neon purple, cyan, blue, and pink gradients
+- Smooth animations, professional typography
+- Fully mobile and desktop responsive
+- Premium startup-quality UI
 
-Customer Management:
+---
 
-* Add Customer
-* Edit Customer
-* Delete Customer
-* Search Customers
-* Customer Profiles
-* Customer Purchase History
-* Customer GST Details
-* Customer Contact Details
+## Core Modules
 
-Product Management:
+### Authentication & Access Control
+- User Registration, Login, Forgot Password, Email Verification
+- Profile Management
+- Role-Based Access Control: User role and Admin role (separate access)
+- Admin credentials: `admin` / `281109`
 
-* Add Products
-* Edit Products
-* Delete Products
-* Product Categories
-* Product Images
-* Product Pricing
-* Product Cost Price
-* Product Selling Price
-* Product Stock Tracking
+### User Dashboard
+- Revenue Overview, Profit Overview, GST Summary
+- Sales Analytics, Customer Analytics, Inventory Analytics
+- Recent Activity feed
+- Business Health Score (composite metric)
 
-Inventory Management:
+### Customer Management
+- Full CRUD: Add, Edit, Delete customers
+- Search and filter across all customers
+- Customer profiles with purchase history, GST details, contact details
 
-* Stock Tracking
-* Inventory Dashboard
-* Low Stock Alerts
-* Stock In and Stock Out
-* Inventory Reports
-* Supplier Tracking
+### Product Management
+- Full CRUD: Add, Edit, Delete products with categories and images
+- Cost price, selling price, and live stock tracking per product
 
-Invoice Management:
+### Inventory Management
+- Stock tracking dashboard with low-stock alerts
+- Stock In / Stock Out operations
+- Inventory reports, supplier tracking
 
-* GST Invoice Generator
-* Tax Invoice Generator
-* Invoice Templates
-* Invoice Number Automation
-* Download PDF Invoice
-* Print Invoice
-* Customer Invoice History
+### Invoice Management
+- GST Invoice Generator and Tax Invoice Generator
+- Multiple invoice templates; auto invoice number sequencing
+- Download as PDF, print, view full customer invoice history
 
-GST Management:
+### GST Management
+- Automatic CGST / SGST / IGST calculation per transaction
+- GST Dashboard, Reports, and Summary views
+- Export to Excel and PDF
+- Sales Register and Purchase Register
 
-* Automatic GST Calculation
-* CGST Calculation
-* SGST Calculation
-* IGST Calculation
-* GST Dashboard
-* GST Reports
-* GST Summary
-* GST Excel Export
-* GST PDF Export
-* Sales Register
-* Purchase Register
+### Accounting
+- Income and expense tracking
+- Profit & Loss Reports, Cash Flow Reports
+- Financial Dashboard
 
-Accounting:
+### AI Tools (8 built-in tools)
+1. **AI Resume Builder** — resume templates, PDF export, ATS-friendly output
+2. **AI Instagram Caption Generator** — business & marketing captions, hashtag suggestions
+3. **AI Homework Planner** — subject planning, daily and weekly study plans
+4. **AI Product Description Generator** — ecommerce and SEO-friendly descriptions
+5. **AI Business Name Generator**
+6. **AI Marketing Content Generator**
+7. **AI Email Writer**
+8. **AI Social Media Post Generator**
 
-* Income Tracking
-* Expense Tracking
-* Profit & Loss Reports
-* Cash Flow Reports
-* Financial Dashboard
+### Watch Seller Tools
+- Watch Profit Calculator
+- Watch Inventory Management
+- Watch Sales Analytics
+- Watch Stock Tracking
 
-AI Tools:
+### Dropshipping Tools
+- Product Profit Calculator
+- Order Tracking
+- Supplier Tracking
+- AI Product Description Generator (shared with AI Tools)
 
-1. AI Resume Builder
-    * Resume Templates
-    * PDF Export
-    * ATS-Friendly Resume Creation
-2. AI Instagram Caption Generator
-    * Business Captions
-    * Marketing Captions
-    * Hashtag Suggestions
-3. AI Homework Planner
-    * Subject Planning
-    * Daily Study Planner
-    * Weekly Study Planner
-4. AI Product Description Generator
-    * Ecommerce Product Descriptions
-    * SEO-Friendly Descriptions
-5. AI Business Name Generator
-6. AI Marketing Content Generator
-7. AI Email Writer
-8. AI Social Media Post Generator
+### Reports
+- Revenue, Profit, GST, Inventory, and Customer reports
+- Export to Excel and PDF
 
-Watch Seller Tools:
+### Admin Dashboard (Platform Admin)
+- View, Suspend, and Delete users
+- Manage subscription plans and view platform revenue
+- View all invoices and GST reports across all users
+- Manage content, announcements, and support tickets
 
-* Watch Profit Calculator
-* Watch Inventory Management
-* Watch Sales Analytics
-* Watch Stock Tracking
+---
 
-Dropshipping Tools:
+## Subscription Plans
+| Plan | Price | Notes |
+|---|---|---|
+| Free | ₹0 / month | Entry-level access |
+| Basic | ₹199 / month | Core business tools |
+| Pro | ₹499 / month | + AI tools & advanced reports |
+| Business | ₹999 / month | Full suite + admin analytics |
 
-* Product Profit Calculator
-* Order Tracking
-* Supplier Tracking
-* Product Description Generator
+---
 
-Reports:
+## Integrations & Tech Stack
+- **Auth & Database**: Supabase (authentication + PostgreSQL)
+- **Payments**: Razorpay (subscription billing and management)
+- **AI**: AI API integration (powers all 8 AI content tools)
+- **Documents**: PDF generation, Excel export
+- **Deployment**: Vercel-ready, SEO-optimized, production-ready
 
-* Revenue Reports
-* Profit Reports
-* GST Reports
-* Inventory Reports
-* Customer Reports
-* Export to Excel
-* Export to PDF
+---
 
-Admin Dashboard:
+## Security
+- Role-based permissions enforced at API level
+- Secure Supabase authentication
+- Data validation and rate limiting
+- Audit logs for all sensitive operations
 
-* Separate Admin Login
-* Admin Dashboard
-* View All Users
-* Suspend Users
-* Delete Users
-* Manage Subscription Plans
-* View Revenue
-* View Platform Analytics
-* View All Invoices
-* View GST Reports
-* Manage Content
-* Manage Announcements
-* Manage Support Tickets
+---
 
-Subscription System:
-
-* Free Plan
-* Basic Plan ₹199/month
-* Pro Plan ₹499/month
-* Business Plan ₹999/month
-* Subscription Billing
-* Subscription Management
-
-Notifications:
-
-* Email Notifications
-* Low Stock Notifications
-* Invoice Notifications
-* Subscription Notifications
-
-Database:
-
-* Secure Database
-* User Data Storage
-* Customer Data Storage
-* Product Data Storage
-* Invoice Data Storage
-* Reports Data Storage
-
-Integrations:
-
-* Supabase Authentication
-* Supabase Database
-* Razorpay Payments
-* AI API Integration
-* PDF Generation
-* Excel Export
-
-Security:
-
-* Role-Based Permissions
-* Secure Authentication
-* Data Validation
-* Rate Limiting
-* Audit Logs
-
-Deployment:
-
-* Production Ready
-* SEO Optimized
-* Fast Loading
-* Responsive
-* Ready for Vercel Deployment
-
-ADMIN:
-Email:admin
-Password: 281109
-Branding:
-Application Name: BizVault AI
-
-Tagline:
-“The Future of Business Management and AI Automation”
-
-Generate complete frontend, backend, database schema, authentication system, admin panel, dashboards, API integrations, responsive design, and all required functionality.
+## North Star Operations
+The three verified operations this app is built to serve:
+1. **Invoice Generated** — a GST-compliant invoice created and saved by a business user
+2. **Stock Transaction Recorded** — a stock-in or stock-out event logged in the inventory
+3. **AI Tool Output Generated** — a resume, caption, description, or other AI output created and used
