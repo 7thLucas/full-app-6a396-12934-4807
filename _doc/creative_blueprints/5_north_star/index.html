@@ -1,0 +1,128 @@
+<style>
+.mode-landscape .sl-main { flex-direction: row; gap: 2rem; }
+.mode-portrait .sl-main { flex-direction: column; gap: 1.5rem; }
+.mode-landscape .sl-left-col { width: 52%; }
+.mode-portrait .sl-left-col { width: 100%; }
+.mode-landscape .sl-right-col { width: 48%; }
+.mode-portrait .sl-right-col { width: 100%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full flex flex-col p-10">
+
+    <!-- Header -->
+    <div class="mb-5">
+      <div class="flex items-center gap-2 mb-1">
+        <div class="w-1 h-5 rounded-full" style="background: linear-gradient(to bottom, #7c3aed, #ec4899)"></div>
+        <span class="text-xs font-bold text-slate-500 uppercase tracking-widest">North Star</span>
+        <span class="ml-2 text-xs font-medium text-slate-400 bg-slate-100 rounded-full px-2 py-0.5">Projected impact — based on your inputs</span>
+      </div>
+      <h2 class="text-slate-900 font-black text-2xl">Weekly Verified Operations</h2>
+    </div>
+
+    <div class="sl-main flex flex-1">
+
+      <!-- Left: operations + formula -->
+      <div class="sl-left-col flex flex-col gap-3">
+
+        <!-- Operation types -->
+        <div class="rounded-xl border border-slate-100 p-4 bg-white">
+          <div class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3">The 3 Verified Operations</div>
+          <div class="space-y-2">
+            <div class="flex items-center gap-3">
+              <span class="w-6 h-6 rounded-md flex items-center justify-center text-sm flex-shrink-0" style="background: rgba(124,58,237,0.1)">🧾</span>
+              <div>
+                <div class="text-sm font-semibold text-slate-800">Invoice Generated</div>
+                <div class="text-xs text-slate-500">A GST-compliant invoice created and saved in the app</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-6 h-6 rounded-md flex items-center justify-center text-sm flex-shrink-0" style="background: rgba(6,182,212,0.1)">📦</span>
+              <div>
+                <div class="text-sm font-semibold text-slate-800">Stock Transaction Recorded</div>
+                <div class="text-xs text-slate-500">A stock-in or stock-out event logged in inventory</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-6 h-6 rounded-md flex items-center justify-center text-sm flex-shrink-0" style="background: rgba(236,72,153,0.1)">🤖</span>
+              <div>
+                <div class="text-sm font-semibold text-slate-800">AI Tool Output Generated</div>
+                <div class="text-xs text-slate-500">A resume, caption, description, or email produced and used</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- WVO Formula -->
+        <div class="rounded-xl border border-violet-100 p-4" style="background: rgba(124,58,237,0.04)">
+          <div class="text-xs font-bold text-violet-600 uppercase tracking-wider mb-3">WVO Formula (per active user)</div>
+          <div class="space-y-1.5 text-sm">
+            <div class="flex items-center justify-between">
+              <span class="text-slate-600">Invoices / week</span>
+              <span class="font-mono font-bold text-slate-800 bg-amber-50 border border-amber-200 rounded px-2 py-0.5 text-xs">12 — Assumption, adjust this</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-slate-600">Stock transactions / week</span>
+              <span class="font-mono font-bold text-slate-800 bg-amber-50 border border-amber-200 rounded px-2 py-0.5 text-xs">20 — Assumption, adjust this</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-slate-600">AI tool jobs / week</span>
+              <span class="font-mono font-bold text-slate-800 bg-amber-50 border border-amber-200 rounded px-2 py-0.5 text-xs">5 — Assumption, adjust this</span>
+            </div>
+            <div class="h-px bg-violet-100 my-1"></div>
+            <div class="flex items-center justify-between font-bold">
+              <span class="text-slate-800">= WVO / user / week</span>
+              <span class="text-violet-700 text-base">37 ops/week</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: value derivation + totals -->
+      <div class="sl-right-col flex flex-col gap-3">
+
+        <!-- Value per operation -->
+        <div class="rounded-xl border border-slate-100 p-4 bg-white">
+          <div class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3">Value Derivation (per user)</div>
+          <div class="space-y-2 text-xs text-slate-600">
+            <div class="flex items-start gap-2">
+              <span class="text-violet-400 mt-0.5">▸</span>
+              <span><strong class="text-slate-800">Invoice:</strong> 17 min saved × ₹250/hr = ₹71/invoice → 12/wk = <strong class="text-slate-800">₹852/week</strong></span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-cyan-400 mt-0.5">▸</span>
+              <span><strong class="text-slate-800">Stock:</strong> 5 min saved × ₹250/hr = ₹21/txn → 20/wk = <strong class="text-slate-800">₹417/week</strong></span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-pink-400 mt-0.5">▸</span>
+              <span><strong class="text-slate-800">AI Tools:</strong> 45 min saved/job × ₹250/hr = ₹188/job → 5/wk = <strong class="text-slate-800">₹938/week</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Total value -->
+        <div class="rounded-xl p-5 flex flex-col justify-center" style="background: linear-gradient(135deg, #1e1b4b, #0c2040)">
+          <div class="text-xs font-semibold text-violet-300 uppercase tracking-wider mb-1">Total value per user</div>
+          <div class="text-4xl font-black text-white mb-0.5">₹2,207<span class="text-lg font-normal text-slate-400">/week</span></div>
+          <div class="text-violet-300 text-sm font-semibold">₹1,14,764 / year</div>
+          <div class="mt-3 h-px bg-white opacity-10"></div>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-xs text-slate-400">Pro Plan cost / year</div>
+            <div class="text-sm font-bold text-slate-300">₹5,988</div>
+          </div>
+          <div class="flex items-center justify-between mt-1">
+            <div class="text-xs text-slate-400">Annual value ÷ cost</div>
+            <div class="text-xl font-black" style="background: linear-gradient(135deg, #a78bfa, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text">19.2× ROI</div>
+          </div>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="text-xs text-slate-400 leading-relaxed">
+          All inputs marked "Assumption" are editable estimates. Actual value depends on usage volume, business type, and owner hourly rate.
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
